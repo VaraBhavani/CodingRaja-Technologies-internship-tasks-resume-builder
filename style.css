@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(31, 31, 31);
+    background-size: cover;
+    height:100%;
+}
+#cv-form{
+   /* display:none;*/
+}
+#cv-template{
+    display: none;
+}
+.myimg{
+    border-radius:50%;
+    width:200px;
+
+}
+.background{
+    background-color:rgb(235, 155, 8);
+}
+

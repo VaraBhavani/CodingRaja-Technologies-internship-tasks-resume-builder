@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Resume Builder</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container" id="cv-form" style="color:white">
+      
+      <h1 class="text-center my-2 text-white" >ONLINE RESUME BUILDER</h1>
+
+       <div class="row">
+         <div class=" col-md-6">
+           <h3 style="color: orange">personal information</h3>
+           <div class="form-group mt-2">
+            <label for="nameField">Your Name:</label>
+            <input type="text" id="nameField" class="form-control" placeholder="Enter Your Name">
+           </div>
+         <div class="form-group mt-2">
+            <label for="contactField">Your Contact:</label>
+            <input type="text" id="contactField" class="form-control" placeholder="Enter Your phone number">
+         </div>
+         <div class="form-group mt-2">
+            <label for="addressField">Your Address:</label>
+            <textarea id="addressField" class="form-control" rows="3" placeholder="Enter Your address" ></textarea>
+         </div>
+         <p class="text-primary text-center ">Important Links</p>
+         <div class="form-group mt-2">
+            <label for="fbField">Facebook:</label>
+            <input type="text" id="fbField" class="form-control" placeholder="Enter here">
+          </div>
+          <div class="form-group mt-2">
+            <label for="instaField">Instagram:</label>
+            <input type="text" id="instaField" class="form-control" placeholder="Enter here">
+          </div>
+          <div class="form-group">
+            <label for="linkedField">Linkedin:</label>
+            <input type="text" id="linkedField" class="form-control" placeholder="Enter here">
+          </div>
+        </div>
+        <div class="col-md-6 ">
+         <h3 style="color: orange" >professional Information</h3>
+         <div class="form-group mt-2">
+            <label for="objectiveField">Objective:</label>
+            <textarea  id="objectiveField" class="form-control" placeholder="Enter here" rows="4" ></textarea>
+         </div>
+         <div class="form-group mt-2" id="sk">
+          <label for="">Skills:</label>
+          <textarea  class="form-control skField"  rows="2" placeholder="Enter here"></textarea>
+          <div class="container text-center mt-2" id="skAddButton">
+              <button onclick="addNewSKField()" class="btn btn-secondary">add</button>
+          </div>
+         </div>
+         <div class="form-group mt-2" id="we">
+            <label for="">Work Experience:</label>
+            <textarea  class="form-control weField"  rows="2" placeholder="Enter here"></textarea>
+            <div class="container text-center mt-2" id="weAddButton">
+                <button onclick="addNewWEField()" class="btn btn-secondary">add</button>
+            </div>
+         </div>
+         <div class="form-group mt-2" id="aq">
+            <label for="">Academic Qualification:</label>
+            <textarea  class="form-control eqField"  rows="2" placeholder="Enter here" ></textarea>
+            <div class="container text-center mt-2" id="aqAddButton">
+                <button onclick="addNewAQField()" class="btn btn-secondary">add</button>
+            </div>
+         </div>
+        </div>
+       </div>
+       <div class="container text-center  mt-2">
+        <button onclick="generateCV()" class="btn btn-info btn-lg">Generate CV</button>
+       
+      </div>
+    </div>
+
+    <div class="container-fluid" id="cv-template">
+      <div class="row">
+        <div class="col-md-4 text-center py-5 background">
+          <img src="https://amaxfireandsecurity.co.uk/wp-content/uploads/2023/12/profile-pic-MD.jpg" alt="" class="img-fluid myimg"/>
+      
+          <div class="conatiner">
+           <p id="nameT1">kandipilli bhanu prakash</p>
+           <p id="contactT">+91 9922446611, +91 8886574321</p>
+           <p id="addressT">5310324/365472 Sector 64 ludhiana,INDIA</p>
+           <hr/>
+           <p id="fbT"><a href="#1">http://www.facebook.com/bhanu</a></p>
+           <p id="instaT"><a href="#1">http://www.instagram.com/bhanuprakash</a></p>
+           <p id="linkedT"><a href="#1">http://www.linkedIn.com/prakash</a></p>
+          </div>
+        </div>
+        <div class="col-md-8 py-5">
+        <h1 id="nameT2" class="text-center" style="color:rgb(254, 178, 38)">KANDIPILLI BHANU PRAKASH</h1>
+
+         <div class="card mt-4">
+          <div class="card-header background">
+            <h3>Objective</h3>
+          </div>
+          <div class="card-body">
+            <p id="objectiveT">To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.
+              Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.
+            </p>
+          </div>
+         </div>
+
+         <div class="card mt-4">
+          <div class="card-header background">
+            <h3>Skills</h3>
+          </div>
+          <div class="card-body">
+           
+
+            <ul id="skT">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, aut!</li>
+            </ul>
+          </div>
+         </div>
+
+         <div class="card mt-4">
+          <div class="card-header background">
+            <h3>Work Experience</h3>
+          </div>
+          <div class="card-body">
+           
+
+            <ul id="weT">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, aut!</li>
+            </ul>
+          </div>
+         </div>
+
+         <div class="card mt-4">
+          <div class="card-header background">
+            <h3>Academic Qualification</h3>
+          </div>
+          <div class="card-body">
+           
+
+            <ul id="aqT">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, aut!</li>
+            </ul>
+          </div>
+         </div>
+
+        <div class="container mt-3 text-center">
+          <button onclick="printCV()" class="btn background">print CV</button>
+        </div>
+        </div>
+      </div>
+   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
